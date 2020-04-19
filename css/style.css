@@ -134,3 +134,26 @@ MENU MOBILE
     padding: 10px 25px;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+.slick{
+    width:100%;
+    height:100px;
+}
+
+/* fleches gauche - droite*/
+
+.slick-arrow{
+    color:black;
+    background-color:red;
+}
+
+.slick-arrow:hover{
+    background-color:blue;
+}
+
+.slick-arrow:focus{
+    background-color:purple;
+}
