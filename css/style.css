@@ -1,0 +1,136 @@
+/* BOOTSTRAP CHANGES */
+.row{
+    margin:0;
+}
+.container{
+    max-width:1440px;
+}
+
+/* TITLES */
+h1{
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li:last-child {
+    border-right: none;
+}
+
+#menu a {
+    padding: 1.5rem 2rem;
+    display: block;
+    font-weight: 700;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgb(255,255,255);
+}
+
+#menu a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#menu li:last-child a {
+    border-right: none;
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+
+/***************************************************
+MENU MOBILE
+***************************************************/
+#menu-mobile {
+    display: none;
+}
+
+#menu-mobile .btn-bars {
+    cursor: pointer;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    text-align: right;
+}
+
+#menu-mobile ul {
+    padding-top: 0.5rem;
+    list-style: none;
+}
+
+#menu-mobile li {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+#menu-mobile a {
+    padding: 1rem;
+    display: block;
+    color: rgba(255, 255, 255, .95);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, .9);
+}
+
+
+@media screen and (max-width: 800px){
+    #menu{
+        display: none;
+    }
+    #menu-mobile{
+        display: block;
+    }
+}
+
+
+
+.accordeon > h3{
+    margin: 10px 0 0 0;
+    padding: 15px 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.accordeon > h3.actif .fa-caret-right{
+    transform: rotate(90deg);
+    transition: all .5s ease;
+}
+
+.accordeon p{
+    font-size: 105%;
+    line-height: 150%;
+}
+
+.accordeon > h3:hover, .accordeon > h3.actif{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+.accordeon > div{
+    padding: 10px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
