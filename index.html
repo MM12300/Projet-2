@@ -14,6 +14,8 @@
     <!-- SLICK STYLESHEET -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- CSS STYLE SHEET -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -26,7 +28,20 @@
 
     <!-- !!!!!! !ROW-1 : HEADER !!!!!!!!!!! -->
     <header class="row">
-        <h1 class="col-12">Projet 2 - Bootstrap & Jquery</h1>
+        <div id="topbar" class="justify-content-around col-12 d-flex flex-row">
+        <h1>Projet 2 - Bootstrap & Jquery</h1>
+        <nav id="menu-mobile">
+            <span class="btn-bars">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </nav>
+        </div>
         <div id="slidebs" class="carousel slide" data-ride="carousel">
             <!-- SLIDE PANORAMA -->
             <ol class="carousel-indicators">
@@ -65,25 +80,14 @@
             </ul>
         </nav>
         <!--MOBILE NAVBAR -->
-        <nav class= "col-12" id="menu-mobile">
-            <span class="btn-bars">
-                <i class="las la-bars"></i>
-            </span>
-            <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-            </ul>
-        </nav>
-    </header>
+        </header>
     <main>
         <!-- ROW-2 : ABOUT -->
         <section class="row" id="about">
             <div>
                 <img class="img-fluid" src="images/maquette.png" alt="maquette du site">
             </div>
-            <div>
+            <div id="apropos">
                 <h2>À propos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at corrupti dolores dolorum maiores
                     ut obcaecati consectetur tenetur error facilis magnam mollitia quaerat perspiciatis, cum eveniet

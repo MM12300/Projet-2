@@ -18,12 +18,50 @@ body{
 }
 
 /* TITLES */
+#top-bar{
+    background-color:#30475e;
+    padding:10px;
+}
 h1{
     text-align:center;
     font-size:1rem;
-    background-color:#30475e;
-    padding:10px;
     text-transform:uppercase;
+    align-self:center;
+    margin:0;
+
+}
+
+
+/***************************************************
+MENU MOBILE
+***************************************************/
+#menu-mobile {
+    display: none;
+}
+
+#menu-mobile .btn-bars {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    text-align: right;
+}
+
+#menu-mobile ul {
+    padding-top: 0.5rem;
+    list-style: none;
+}
+
+#menu-mobile li {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+#menu-mobile a {
+    padding: 1rem;
+    display: block;
+    color: rgba(255, 255, 255, .95);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, .9);
 }
 
 
@@ -31,16 +69,24 @@ h1{
 .carousel-indicators li{
     background-color:#e79212;
 }
-
-
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e79212' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
-   
+   }  
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e79212' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
+#slidebs{
+    margin-bottom:10px;
+}
 
+/*A PROPOS - ABOUT*/
+#apropos{
+    margin-top:20px;
+    text-align:center;
+}
+#apropos p{
+    font-size:1rem;
+}
 
 
 
@@ -90,38 +136,7 @@ h1{
     left:0;
 }
 
-/***************************************************
-MENU MOBILE
-***************************************************/
-#menu-mobile {
-    display: none;
-}
 
-#menu-mobile .btn-bars {
-    cursor: pointer;
-    display: block;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 2rem;
-    text-align: right;
-}
-
-#menu-mobile ul {
-    padding-top: 0.5rem;
-    list-style: none;
-}
-
-#menu-mobile li {
-    background-color: rgba(0, 0, 0, 0.3); 
-}
-
-#menu-mobile a {
-    padding: 1rem;
-    display: block;
-    color: rgba(255, 255, 255, .95);
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(255, 255, 255, .9);
-}
 
 
 @media screen and (max-width: 800px){
