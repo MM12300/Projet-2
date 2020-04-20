@@ -36,7 +36,7 @@ h2{
 }
 
 /* MAIN LAYOUT  */
-#apropos, #examples{
+#apropos, #examples, footer{
     padding-left:5vw;
     padding-right:5vw;
 }
@@ -137,7 +137,40 @@ thead{
     padding-bottom:10px;
 }
 
+/* SLICK */
+.slick{
+    width:100%;
+}
 
+.slick-prev::before{
+    color:#c1a57b;
+}
+
+.slick-next::before{
+    color:#c1a57b;
+}
+
+.slick-dots li.slick-active button::before{
+    color:#c1a57b;
+}
+
+.slick-dots li button::before{
+    color:#c1a57b;
+}
+
+
+
+/* !!!!!!!!!! FOOTER !!!!!!!!!!*/
+footer{
+    justify-content:center;
+}
+/* CARTES */
+.card-body{
+    background-color:#30475e;
+}
+.card{
+    background-color:#181c22;
+}
 
 
 
@@ -227,31 +260,8 @@ thead{
 
 .accordeon > div{
     padding: 10px 25px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 
 
 
-.slick{
-    width:100%;
-}
-
-/* fleches gauche - droite*/
-
-.slick-arrow{
-    color:black;
-    background-color:red;
-}
-
-.slick-arrow:hover{
-    background-color:blue;
-}
-
-.slick-arrow:focus{
-    background-color:purple;
-}
-
-.slick-dots li button::before{
-    color:#c1a57b
-}
