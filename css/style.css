@@ -24,12 +24,25 @@ body{
 }
 h1{
     text-align:center;
-    font-size:1rem;
+    font-size:1.15rem;
     text-transform:uppercase;
     align-self:center;
     margin:0;
-
+    width:100%;
 }
+h2{
+    width:100%;
+    text-align:center;
+}
+
+/* MAIN LAYOUT  */
+#apropos, #examples{
+    padding-left:5vw;
+    padding-right:5vw;
+}
+
+
+/* !!!!!!!!! NAV!!!!!!!!!!!! */
 
 
 /***************************************************
@@ -67,13 +80,13 @@ MENU MOBILE
 
 /* CAROUSEL */
 .carousel-indicators li{
-    background-color:#e79212;
+    background-color:#c1a57b;
 }
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e79212' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c1a57b' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
    }  
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e79212' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c1a57b' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 #slidebs{
     margin-bottom:10px;
@@ -88,9 +101,44 @@ MENU MOBILE
     font-size:1rem;
 }
 
-#accordeon{
+/* ACCORDEON */
+.accordeon{
     width:100%;
 }
+
+/* !!!!!!!EXAMPLES!!!!!!!!! */
+
+/* TABLE BOOTSTRAP */
+#table{
+    width:100%;
+}
+
+.table{
+    background-color: #30475e;
+}
+
+thead{
+    background-color:#181c22;   
+}
+.table-dark td, .table-dark th, .table-dark thead th{
+    border-color:#e4e4e4 !important;
+}
+.table-dark thead th{
+    border-top:0;
+}
+
+/* FANBYBOX */
+#fancy{
+    width:100%;
+}
+
+.fancy a{
+    align-self:center;
+    padding-bottom:10px;
+}
+
+
+
 
 
 
@@ -202,4 +250,8 @@ MENU MOBILE
 
 .slick-arrow:focus{
     background-color:purple;
+}
+
+.slick-dots li button::before{
+    color:#c1a57b
 }
