@@ -4,6 +4,7 @@
 }
 .col-12{
     margin:0;
+    padding:0;
 }
 .container{
     max-width:1440px;
@@ -15,6 +16,7 @@
 body{
     background-color:#222831;
     color:#ececec;
+    font-family: "Inconsolata";
 }
 
 /* TITLES */
@@ -43,39 +45,48 @@ h2{
 
 
 /* !!!!!!!!! NAV!!!!!!!!!!!! */
-
-
-/***************************************************
-MENU MOBILE
-***************************************************/
-#menu-mobile {
-    display: none;
+#menu {
+    background-color: #181c22;
 }
 
-#menu-mobile .btn-bars {
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 2rem;
-    text-align: right;
-}
-
-#menu-mobile ul {
-    padding-top: 0.5rem;
-    list-style: none;
-}
-
-#menu-mobile li {
-    background-color: rgba(0, 0, 0, 0.3); 
-}
-
-#menu-mobile a {
-    padding: 1rem;
-    display: block;
-    color: rgba(255, 255, 255, .95);
-    font-weight: bold;
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
-    border-bottom: 1px solid rgba(255, 255, 255, .9);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size:0.9rem;
 }
+
+#menu li:last-child {
+    margin-right: none;
+}
+
+#menu a {
+    display: block;
+    font-weight: 700;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgb(255,255,255);
+    padding:7px;
+}
+
+#menu a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#menu li:last-child a {
+    border-right: none;
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+
 
 
 /* CAROUSEL */
@@ -87,9 +98,6 @@ MENU MOBILE
    }  
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c1a57b' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-#slidebs{
-    margin-bottom:10px;
 }
 
 /*A PROPOS - ABOUT*/
@@ -104,6 +112,33 @@ MENU MOBILE
 /* ACCORDEON */
 .accordeon{
     width:100%;
+}
+.accordeon > h3{
+    margin: 10px 0 0 0;
+    padding: 15px 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.accordeon > h3.actif .fa-caret-right{
+    transform: rotate(90deg);
+    transition: all .5s ease;
+}
+
+.accordeon p{
+    font-size: 105%;
+    line-height: 150%;
+}
+
+.accordeon > h3:hover, .accordeon > h3.actif{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+.accordeon > div{
+    padding: 10px 25px;
 }
 
 /* !!!!!!!EXAMPLES!!!!!!!!! */
@@ -172,95 +207,26 @@ footer{
     background-color:#181c22;
 }
 
-
-
-
-
-
-
-
-#menu {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-#menu ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#menu li:last-child {
-    border-right: none;
-}
-
-#menu a {
-    padding: 1.5rem 2rem;
-    display: block;
-    font-weight: 700;
-    border-right: 1px solid rgba(255, 255, 255, 0.25);
-    color: rgb(255,255,255);
-}
-
-#menu a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#menu li:last-child a {
-    border-right: none;
-}
-
-.fixed{
-    position: fixed;
-    top:0;
-    right:0;
-    left:0;
-}
-
-
-
-
-@media screen and (max-width: 800px){
-    #menu{
-        display: none;
-    }
-    #menu-mobile{
-        display: block;
+@media screen and (min-width:700px){
+    #menu a {
+        padding: 1.5rem 2rem;
     }
 }
 
 
 
-.accordeon > h3{
-    margin: 10px 0 0 0;
-    padding: 15px 25px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: rgb(255, 255, 255);
-    font-weight: normal;
-    cursor: pointer;
-    transition: all .5s ease;
-}
-.accordeon > h3.actif .fa-caret-right{
-    transform: rotate(90deg);
-    transition: all .5s ease;
-}
 
-.accordeon p{
-    font-size: 105%;
-    line-height: 150%;
-}
 
-.accordeon > h3:hover, .accordeon > h3.actif{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255);
-}
 
-.accordeon > div{
-    padding: 10px 25px;
-}
+
+
+
+
+
+
+
+
+
 
 
 

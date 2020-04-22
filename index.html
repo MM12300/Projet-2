@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- CSS STYLE SHEET -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>Projet 2 - Bootstrap & Jquery</title>
 </head>
@@ -30,17 +32,6 @@
     <header class="row">
         <div id="topbar" class="justify-content-around col-12 d-flex flex-row">
         <h1>Projet 2 - Bootstrap & Jquery</h1>
-        <nav id="menu-mobile">
-            <span class="btn-bars">
-                <i class="fas fa-bars"></i>
-            </span>
-            <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-            </ul>
-        </nav>
         </div>
         <div id="slidebs" class="carousel slide" data-ride="carousel">
             <!-- SLIDE PANORAMA -->
@@ -73,10 +64,10 @@
         <!-- !!!!!!!!!!COLUMN!!!!!!!!!!!! -->
         <nav class="col-12" id="menu">
             <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#examples">Exemples</a></li>
+                <li><a href="#footer">En savoir plus</a></li>
+                <li><a href="http://cv.matthieu-m.com">Mon site CV</a></li>
             </ul>
         </nav>
         <!--MOBILE NAVBAR -->
@@ -194,7 +185,7 @@
         </section>
     </main>
     <!-- ROW-4 : FOOTER -->
-    <footer class="row">
+    <footer id="footer" class="row">
         <div class="col-sd-12 d-flex flex-column">
         <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
