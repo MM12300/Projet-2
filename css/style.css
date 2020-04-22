@@ -186,7 +186,10 @@ thead{
 #fancy{
     width:100%;
 }
-
+.fancy{
+    display:flex;
+    flex-direction:column;
+}
 .fancy a{
     align-self:center;
     padding-bottom:10px;
@@ -238,7 +241,12 @@ footer{
 }
 .card-text{
     display:none;
-
+}
+.card-title{
+    text-align:center;
+}
+.card-img-top{
+    display:none;
 }
 .btn{
     background-color:#c1a57b;
@@ -269,7 +277,7 @@ footer{
         padding-top:10px;
     }
     .accordeon h3:nth-of-type(1){
-        width:80%;
+        width:90%;
         margin-bottom:20px;
     }
     .accordeon h3:nth-of-type(2){
@@ -277,10 +285,44 @@ footer{
         margin-bottom:20px;     
     }
     .accordeon h3:nth-of-type(3){
-        width:40%;    
+        width:30%;    
     }
     .accordeon > h3.actif{
         margin:0;
+    }
+    #examples{
+        border-top: solid white 0.5px;
+        padding-top:10px;
+    }
+    .table > thead{
+        font-size:1.3rem;
+    }
+    .fancy{
+        flex-direction:row;
+        justify-content: center;
+    }
+    .fancy img{
+        padding:10px;
+        width:90%;
+    }
+    .fancy a{
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .slick-slide, .slick-prev{
+        padding-left:10px;
+    }
+    .card-body{
+        display:flex;
+        flex-direction:column;
+    }
+    .card-img-top{
+        display:block;
+        padding:10%;
+    }
+    footer .btn{
+        width:50%;
+        align-self:center;
     }
 
 
