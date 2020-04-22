@@ -1,14 +1,21 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 /* BOOTSTRAP CHANGES */
 .row{
     margin:0;
 }
-.col-12{
+.col-12, .col-4{
     margin:0;
     padding:0;
 }
 .container{
     max-width:1440px;
     padding:0;
+    margin:0;
+}
+p{
     margin:0;
 }
 
@@ -29,19 +36,26 @@ h1{
     font-size:1.15rem;
     text-transform:uppercase;
     align-self:center;
-    margin:0;
+    margin:10px 0;
     width:100%;
+
 }
 h2{
     width:100%;
     text-align:center;
 }
+h3{
+    margin-bottom:5px;
+}
 
 /* MAIN LAYOUT  */
-#apropos, #examples, footer{
+#apropos, .accordeon, #examples, footer{
+    margin-top:20px;
     padding-left:5vw;
     padding-right:5vw;
 }
+
+
 
 
 /* !!!!!!!!! NAV!!!!!!!!!!!! */
@@ -70,6 +84,7 @@ h2{
     border-right: 1px solid rgba(255, 255, 255, 0.25);
     color: rgb(255,255,255);
     padding:7px;
+    text-align:center;
 }
 
 #menu a:hover{
@@ -102,11 +117,14 @@ h2{
 
 /*A PROPOS - ABOUT*/
 #apropos{
-    margin-top:20px;
     text-align:center;
 }
 #apropos p{
     font-size:1rem;
+}
+
+#about img{
+    padding-top:10px;
 }
 
 /* ACCORDEON */
@@ -114,7 +132,6 @@ h2{
     width:100%;
 }
 .accordeon > h3{
-    margin: 10px 0 0 0;
     padding: 15px 25px;
     background-color: rgba(0, 0, 0, 0.3);
     color: rgb(255, 255, 255);
@@ -128,7 +145,6 @@ h2{
 }
 
 .accordeon p{
-    font-size: 105%;
     line-height: 150%;
 }
 
@@ -139,6 +155,10 @@ h2{
 
 .accordeon > div{
     padding: 10px 25px;
+}
+
+.accordeon > h3 > div{
+    display:block;
 }
 
 /* !!!!!!!EXAMPLES!!!!!!!!! */
@@ -177,6 +197,15 @@ thead{
     width:100%;
 }
 
+.slick-prev{
+    left:5px;
+    z-index:1
+}
+
+.slick-next{
+    right:5px;
+}
+
 .slick-prev::before{
     color:#c1a57b;
 }
@@ -205,12 +234,56 @@ footer{
 }
 .card{
     background-color:#181c22;
+    padding:0;
+}
+.card-text{
+    display:none;
+
+}
+.btn{
+    background-color:#c1a57b;
+    border-color: #c1a57b;
+}
+.btn:hover{
+    background-color:#181c22;
+    border-color: #181c22;
 }
 
+
 @media screen and (min-width:700px){
-    #menu a {
-        padding: 1.5rem 2rem;
+    h2{
+        text-transform:uppercase;
+        font-size:2.3rem;
     }
+    #menu a {
+        padding: 5px !important;
+        text-align:center;
+        font-size:1.2rem;
+    }
+    #about img {
+        padding-top: 20px;
+    }
+    #apropos {
+        text-align: left;
+        border-top: solid white 0.5px;
+        padding-top:10px;
+    }
+    .accordeon h3:nth-of-type(1){
+        width:80%;
+        margin-bottom:20px;
+    }
+    .accordeon h3:nth-of-type(2){
+        width:60%; 
+        margin-bottom:20px;     
+    }
+    .accordeon h3:nth-of-type(3){
+        width:40%;    
+    }
+    .accordeon > h3.actif{
+        margin:0;
+    }
+
+
 }
 
 

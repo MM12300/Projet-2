@@ -29,7 +29,8 @@
 
 
     <!-- !!!!!! !ROW-1 : HEADER !!!!!!!!!!! -->
-    <header class="row">
+    <header>
+        <div class="row">
         <div id="topbar" class="justify-content-around col-12 d-flex flex-row">
         <h1>Projet 2 - Bootstrap & Jquery</h1>
         </div>
@@ -60,14 +61,15 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+    </div>
         <!-- NAVBAR -->
         <!-- !!!!!!!!!!COLUMN!!!!!!!!!!!! -->
-        <nav class="col-12" id="menu">
-            <ul>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#examples">Exemples</a></li>
-                <li><a href="#footer">En savoir plus</a></li>
-                <li><a href="http://cv.matthieu-m.com">Mon site CV</a></li>
+        
+        <nav id="menu">
+            <ul class="row">
+                <li class="col-4"><a href="#apropos">À propos</a></li>
+                <li class="col-4"><a href="#examples">Exemples</a></li>
+                <li class="col-4"><a href="http://cv.matthieu-m.com">site CV</a></li>
             </ul>
         </nav>
         <!--MOBILE NAVBAR -->
@@ -86,8 +88,8 @@
                     voluptate ea veniam tempore? Veritatis repudiandae molestias harum perferendis nam iusto?</p>
             </div>
             <div class="accordeon col-sd-12">
-                <h3>Thème de la page</h3>
-                <div>
+                <h3 class="actif">Thème de la page</h3>
+                <div id="theme">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat quos cupiditate
                         corporis
                         nesciunt numquam voluptates modi aliquid ut ullam distinctio eaque laudantium, odit iusto
@@ -162,6 +164,7 @@
             <!-- !!!!!!!!!!COLUMN!!!!!!!!!!!! -->
             <div id="fancy" class="col-sd-12">
                 <h3>Miniatures & Galleries</h3>
+                <p>Cliquez sur une miniatures pour ouvrir la gallerie</p>
                 <div class="fancy d-flex flex-column">
                     <a data-fancybox="gallery" href="images/fancybox-1.JPG"><img src="images/fancyboxmin-1.JPG"
                             alt="photo pic montagne"> </a>
@@ -185,19 +188,19 @@
         </section>
     </main>
     <!-- ROW-4 : FOOTER -->
-    <footer id="footer" class="row">
-        <div class="col-sd-12 d-flex flex-column">
-        <div class="card" style="width: 18rem;">
+    <footer id="footer" class="d-flex flex-colum row">
+        <div class="card col-5" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Projet-1</h5>
               <p class="card-text">Intégration et personnalisation d'une maquette</p>
               <a href="#" class="btn btn-primary">En savoir +</a>
             </div>
-          </div>
+        </div>
+        <div class="col-1">
         </div>
 
-          <div class="card" style="width: 18rem;">
+          <div class="col-5 card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Mon site CV</h5>
