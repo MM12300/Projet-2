@@ -269,6 +269,11 @@ footer{
     background-color:#181c22;
     border-color: #181c22;
 }
+#credits{
+    text-align:center;
+    padding : 10px 0;
+    background-color:#181c22;
+}
 
 /* ************
 TABLET VIEW 
@@ -352,18 +357,16 @@ TABLET VIEW
 DESKTOP VIEW
 *************/
 @media (min-width: 992px) {
-    /* #about img {
-        display:none;
-    } */
-
-    #about > div{
-        position:relative;
+    h1{
+        font-size:2.5rem;
     }
-
-    #apropos, .accordeon{
-        padding:0;
+    
+    h2{
+        font-size:2.3rem;
     }
-
+    .carousel-control-prev{
+        font-size:5rem !important;
+    }
     #accueil{
         height:100vh;
     }
@@ -373,11 +376,56 @@ DESKTOP VIEW
     #vueDesk img{
         width:80%;
     }
+    #vueDesk >div{
+        margin-top:10px;
+        border-top: solid white 0.5px;
+    }
+
+    #apropos, .accordeon, #examples, footer {
+        padding-left:10vw;
+        padding-right:10vw;
+    }
+
+    #about > div{
+        position:relative;
+    }
+
+    #apropos{
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .accordeon h3:nth-of-type(1){
+        width:100%;
+    }
+    .accordeon h3:nth-of-type(2){
+        width:70%; 
+    }
+    .accordeon h3:nth-of-type(3){
+        width:35%;    
+    }
+    #table{
+        padding-left:15vw;
+        padding-right:15vw;
+    }
+    .table{
+        text-align:center;
+    }
+    .card-text{
+        display:initial;
+    }
+    .card-title{
+        margin-bottom:5px;
+    }
+    .card-text{
+        margin-bottom:5px;
+    }
 }
-
-
-
-
+    /* ************
+WIDE DESKTOP VIEW
+*************/
+    
 
 
 

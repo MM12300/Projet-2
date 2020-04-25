@@ -1,18 +1,13 @@
 $(function () {
-    // Menu mobile
-    $('#menu-mobile > ul').hide();
-    $('#menu-mobile .btn-bars').on('click', function () {
-        $('#menu-mobile > ul').slideToggle(00);
-    });
-
-        // Ajouter class au scroll (fixer le menu)
-var position = $('#menu').position();
-$('.info').text(position.top);
-
-
+       
+//Sticky menu on top
 $(window).scroll(function () {
-           var scroll = $(window).scrollTop();
-    if (scroll >= 50) {
+    //Variable scroll position
+    var scroll = $(window).scrollTop();
+    //Variable position du haut de la section à propos
+    var header = document.querySelector(".accordeon").offsetTop
+    //Adds fixed class to the navbar
+    if (scroll >= header) {
         $("#menu").addClass("fixed");
     } else {
         $("#menu").removeClass("fixed");
