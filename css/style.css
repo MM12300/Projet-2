@@ -70,6 +70,7 @@ h4{
 /* !!!!!!!!! NAV!!!!!!!!!!!! */
 #menu {
     background-color: #181c22;
+    z-index:500;
 }
 
 #menu ul {
@@ -264,10 +265,14 @@ footer{
 .btn{
     background-color:#c1a57b;
     border-color: #c1a57b;
+    font-size:0.75rem;
 }
 .btn:hover{
     background-color:#181c22;
     border-color: #181c22;
+}
+#social{
+    display:none;
 }
 #credits{
     text-align:center;
@@ -340,6 +345,9 @@ TABLET VIEW
     .slick-slide, .slick-prev{
         padding-left:10px;
     }
+    .card-title{
+        text-transform:uppercase;
+    }
     .card-body{
         display:flex;
         flex-direction:column;
@@ -347,6 +355,17 @@ TABLET VIEW
     .card-img-top{
         display:block;
         padding:10%;
+        width:80%;
+        align-self:center;
+    }
+    #social{
+        display:flex;
+        flex-direction:row;
+        margin-top :10px;
+        justify-content:space-around;
+    }
+    #social img{
+        width:50px;
     }
     footer .btn{
         width:50%;
@@ -439,6 +458,7 @@ WIDE DESKTOP VIEW
     #accueil{
         height:auto;
     }
+
 
 }
     
