@@ -11,7 +11,7 @@ html {
     padding:0;
 }
 .container{
-    max-width:1440px;
+    max-width:2500px;
     padding:0;
     margin:0;
 }
@@ -376,7 +376,7 @@ DESKTOP VIEW
     #vueDesk img{
         width:80%;
     }
-    #vueDesk >div{
+    #vueDesk > div{
         margin-top:10px;
         border-top: solid white 0.5px;
     }
@@ -425,6 +425,18 @@ DESKTOP VIEW
     /* ************
 WIDE DESKTOP VIEW
 *************/
+@media (min-width: 1400px) {
+    #vueDesk{
+        padding-left:15vw;
+        padding-right:15vw;
+        border:none;
+    }
+    #vueDesk > div{
+        margin:0;
+        border:0;
+    }
+
+}
     
 
 
