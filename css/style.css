@@ -270,11 +270,17 @@ footer{
     border-color: #181c22;
 }
 
-
+/* ************
+TABLET VIEW 
+*************/
 @media screen and (min-width:700px){
+    h1{
+        font-size:2rem;
+    }
+    
     h2{
         text-transform:uppercase;
-        font-size:2.3rem;
+        font-size:1.8rem;
     }
     #menu a {
         padding: 5px !important;
@@ -307,6 +313,9 @@ footer{
         border-top: solid white 0.5px;
         padding-top:10px;
     }
+    #examples p{
+        padding-left:15%;
+    }
     .table > thead{
         font-size:1.3rem;
     }
@@ -337,10 +346,34 @@ footer{
         width:50%;
         align-self:center;
     }
-
-
 }
 
+/* ************
+DESKTOP VIEW
+*************/
+@media (min-width: 992px) {
+    /* #about img {
+        display:none;
+    } */
+
+    #about > div{
+        position:relative;
+    }
+
+    #apropos, .accordeon{
+        padding:0;
+    }
+
+    #accueil{
+        height:100vh;
+    }
+    #vueDesk{
+        display:flex;
+    }
+    #vueDesk img{
+        width:80%;
+    }
+}
 
 
 
