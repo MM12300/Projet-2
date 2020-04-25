@@ -380,7 +380,6 @@ DESKTOP VIEW
     h1{
         font-size:2.5rem;
     }
-    
     h2{
         font-size:2.3rem;
     }
@@ -400,7 +399,6 @@ DESKTOP VIEW
         margin-top:10px;
         border-top: solid white 0.5px;
     }
-
     #apropos, .accordeon, #examples, footer {
         padding-left:10vw;
         padding-right:10vw;
@@ -409,7 +407,6 @@ DESKTOP VIEW
     #about > div{
         position:relative;
     }
-
     #apropos{
         padding:0;
         display: flex;
@@ -424,6 +421,9 @@ DESKTOP VIEW
     }
     .accordeon h3:nth-of-type(3){
         width:35%;    
+    }
+    .fancy img{
+        width:100%;
     }
     #table{
         padding-left:15vw;
@@ -440,6 +440,10 @@ DESKTOP VIEW
     }
     .card-text{
         margin-bottom:5px;
+    }
+    footer .btn{
+        width:initial;
+        font-size:1rem;
     }
 }
     /* ************
