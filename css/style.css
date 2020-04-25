@@ -273,6 +273,7 @@ footer{
     text-align:center;
     padding : 10px 0;
     background-color:#181c22;
+    margin-top:10px;
 }
 
 /* ************
@@ -434,6 +435,9 @@ WIDE DESKTOP VIEW
     #vueDesk > div{
         margin:0;
         border:0;
+    }
+    #accueil{
+        height:auto;
     }
 
 }
