@@ -141,6 +141,11 @@ h4{
 .accordeon{
     width:100%;
 }
+
+.accordeon i{
+    padding-right:10px;
+}
+
 .accordeon > h3{
     padding: 15px 25px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -315,10 +320,8 @@ TABLET VIEW
         margin-bottom:20px;     
     }
     .accordeon h3:nth-of-type(3){
-        width:30%;    
-    }
-    .accordeon > h3.actif{
-        margin:0;
+        width:30%;  
+        margin-bottom:20px;  
     }
     #examples{
         border-top: solid white 0.5px;

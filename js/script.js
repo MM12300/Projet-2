@@ -12,6 +12,7 @@ $(window).scroll(function () {
     } else {
         $("#menu").removeClass("fixed");
     }
+    document.querySelector(".accordeon > h3").toggleClass("fa-plus fa-minus")
 });
 
 
@@ -19,8 +20,10 @@ $(window).scroll(function () {
 $('.accordeon > div').hide();
 $('#theme').show();
 $('.accordeon h3').on('click', function () {
-    $(this).addClass('actif').siblings('h3').removeClass('actif');        
-    $(this).next().slideToggle(200).siblings('div').slideUp(200);
+    //CLASS CHANGE OF +/-
+    $(this).children("h3 > i:first-child").toggleClass("fa-plus fa-minus")   
+    //COLLAPSIBLE 
+    $(this).next().slideToggle(200)
 });
 
 // Fancybox
