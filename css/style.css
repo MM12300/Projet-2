@@ -400,7 +400,7 @@ DESKTOP VIEW
         display:flex;
     }
     #vueDesk img{
-        width:80%;
+        width:70%;
     }
     #vueDesk > div{
         margin-top:10px;
