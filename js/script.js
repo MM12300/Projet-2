@@ -12,7 +12,7 @@ $(window).scroll(function () {
     } else {
         $("#menu").removeClass("fixed");
     }
-    document.querySelector(".accordeon > h3").toggleClass("fa-plus fa-minus")
+
 });
 
 
@@ -21,10 +21,36 @@ $('.accordeon > div').hide();
 $('#theme').show();
 $('.accordeon h3').on('click', function () {
     //CLASS CHANGE OF +/-
-    $(this).children("h3 > i:first-child").toggleClass("fa-plus fa-minus")   
+    
+    let variable = $(this).siblings().children("i");
+    let var2 = $(this).children("i");
+
+    // if (variable.hasClass("fa-minus")){
+    //   variable.addClass("fa-plus")
+    // }else if(variable.hasClass("fa-plus")){
+    //   variable.addClass("fa-minus")
+    // }
+
+
+    if(var2.hasClass("fa-minus")){
+      var2.addClass("fa-plus")
+    }else if(var2.hasClass("fa-plus")){
+      var2.addClass("fa-minus")
+    }
+
+     
     //COLLAPSIBLE 
-    $(this).next().slideToggle(200)
+    $(this).next().slideToggle(200).siblings('div').slideUp(200);
+    //fermeture automatique
+    //.siblings('div').slideUp(200);
 });
+
+
+// $('.accordeon h3').on('click', function () {
+//   $(this).next().slideToggle(200).siblings('div').slideUp(200);
+  
+// }
+
 
 // Fancybox
 $('[data-fancybox="gallery"]').fancybox({
