@@ -1,0 +1,18 @@
+
+    let variable = $(this).siblings().children("i");
+    let var2 = $(this).children("i");
+
+    if (variable.hasClass("fa-minus")){
+      variable.addClass("fa-plus")
+    }else if(variable.hasClass("fa-plus")){
+      variable.addClass("fa-minus")
+    }
+
+
+    if(var2.hasClass("fa-minus")){
+      var2.addClass("fa-plus")
+      var2.removeClass("fa-minus")
+    }else if(var2.hasClass("fa-plus")){
+      var2.addClass("fa-minus")
+      var2.removeClass("fa-plus")
+    }

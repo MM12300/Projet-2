@@ -17,13 +17,13 @@ $(window).scroll(function () {
 
 
 // Accordeon
+  //Cache tous le contenu des collapsibles
 $('.accordeon > div').hide();
+  //Affiche le premier 
 $('#theme').show();
+  //sur le click
 $('.accordeon h3').on('click', function () {
     //CLASS CHANGE OF +/-
-    
-    let variable = $(this).siblings().children("i");
-    let var2 = $(this).children("i");
 
     // if (variable.hasClass("fa-minus")){
     //   variable.addClass("fa-plus")
@@ -32,15 +32,24 @@ $('.accordeon h3').on('click', function () {
     // }
 
 
-    if(var2.hasClass("fa-minus")){
-      var2.addClass("fa-plus")
-    }else if(var2.hasClass("fa-plus")){
-      var2.addClass("fa-minus")
-    }
+    // if(var2.hasClass("fa-minus")){
+    //   var2.addClass("fa-plus")
+    // }else if(var2.hasClass("fa-plus")){
+    //   var2.addClass("fa-minus")
+    // }
 
-     
+    //On définit parent = .accordeon
+    let parent = $(this).parent();
+    //On enlève le fa-minus de tous les i et on remplace par fa-plus
+    parent.find("i").removeClass("fa-minus").addClass("fa-plus");
+    $(this).children("i").toggleClass("fa-plus fa-minus")
+    if($(this).next().is(":hidden")){
+      $(this).next().slideToggle(200).siblings('div').slideUp(200);      
+    }   
+
+    
     //COLLAPSIBLE 
-    $(this).next().slideToggle(200).siblings('div').slideUp(200);
+    
     //fermeture automatique
     //.siblings('div').slideUp(200);
 });
