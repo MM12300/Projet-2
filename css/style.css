@@ -393,9 +393,9 @@ DESKTOP VIEW
     .carousel-control-prev{
         font-size:5rem !important;
     }
-    #accueil{
+    /* #accueil{
         height:100vh;
-    }
+    } */
     #vueDesk{
         display:flex;
     }
